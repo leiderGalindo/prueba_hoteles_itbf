@@ -10,7 +10,7 @@
 
 .containerLogin .containerImage {
   width: 40%;
-  background: url('utils/img/login.avif') no-repeat center center / cover;
+  background: url('/utils/img/login.avif') no-repeat center center / cover;
 }
 
 .containerLogin .sectionForm {
