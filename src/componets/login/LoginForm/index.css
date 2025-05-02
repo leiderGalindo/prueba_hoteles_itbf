@@ -1,0 +1,53 @@
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 20px;
+}
+
+#loginForm .containerForgotPassword {
+  text-align: right;
+}
+
+#loginForm .input-field {
+  position: relative;
+}
+
+#loginForm .input-field label {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  color: #8d8d8d;
+  pointer-events: none;
+  background-color: transparent;
+  transform: translateY(50%);
+  transition: all 0.3s ease;
+}
+
+#loginForm .input-field input {
+  padding: 13px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: solid 1px #8d8d8d;
+  background-color: #242424;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+#loginForm .input-field input:focus,
+#loginForm .input-field input:valid {
+  outline: none;
+  border: solid 1px #0034de;
+}
+
+#loginForm .input-field input:focus ~ label,
+#loginForm .input-field input:valid ~ label {
+  transform: translateY(-13px) translateX(-10px) scale(0.9);
+  background-color: #242424;
+  padding: 0px 5px;
+  color: #0034de;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 100px;
+}
