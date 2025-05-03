@@ -12,7 +12,7 @@ export const Hotels = () => {
       {loading && <p>Loading hotels...</p>}
       {!loading && hotels.length === 0 && <p>No hotels available</p>}
       {error && <p>Error: {error}</p>}
-      {!loading && hotels.length > 0 && <HotelList hotels={hotels} />}
+      {!loading && <HotelList hotels={hotels} />}
     </div>
   )
 }
