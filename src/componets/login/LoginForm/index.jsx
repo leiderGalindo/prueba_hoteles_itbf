@@ -15,7 +15,6 @@ const LoginForm = () => {
 
   const onSubmit = async (data) => {
     setLoading(true)
-    console.log(data);
 
     const { email, password } = data
     if(email === '' || password === ''){
@@ -33,11 +32,10 @@ const LoginForm = () => {
       return  'error'
     }
 
-    console.log(response);
     Cookies.set('access_token', response.token)
-    setToken(response.token)
+    setToken(response)
     setLoading(false)
-    navigate('/board')
+    navigate('/hotels')
     
   }
 

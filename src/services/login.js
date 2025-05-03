@@ -14,7 +14,7 @@ export const login = async ({ email, password }) => {
     headers: myHeaders,
     body: params,
   }
-  return await fetch(`${BaseUrlApi}/user/login`, requestOptions)
+  return await fetch(`${BaseUrlApi}/auth/login`, requestOptions)
   .then(async res => {
     if (!res.ok) throw new Error('Error en la petición')
     return await res.json()

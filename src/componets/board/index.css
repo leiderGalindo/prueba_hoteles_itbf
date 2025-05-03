@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: start;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+body #root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.topbar .title {
+  margin: 0;
+}
+
+.topbar button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

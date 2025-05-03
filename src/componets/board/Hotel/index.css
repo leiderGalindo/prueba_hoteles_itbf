@@ -1,0 +1,18 @@
+.containerDetailHotel {
+  width: 100%;
+  min-width: 80vw;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.containerDetailHotel .detailHotel__info {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

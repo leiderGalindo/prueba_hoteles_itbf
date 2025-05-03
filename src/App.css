@@ -33,3 +33,107 @@
 .read-the-docs {
   color: #888;
 }
+
+/* styles/tabla.css */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.tabla thead {
+  background-color: #f4f4f4;
+}
+
+.tabla th,
+.tabla td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.tabla th {
+  color: #333;
+  font-weight: 600;
+}
+
+.tabla td {
+  color: #555;
+}
+
+.responsive-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* asegura que tenga un ancho mínimo para scroll */
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 12px 16px;
+  /* border: 1px solid #ddd; */
+  text-align: left;
+  white-space: nowrap; /* evita salto de línea */
+}
+
+.responsive-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.actionsButtons{
+  display: flex;
+  gap: 5px;
+}
+
+
+button,
+.btnDelete,
+.btnEdit,
+.btnView {
+  padding: 5px 10px;
+  display: grid;
+  place-content: center;
+}
+
+.containerTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 20px;
+}
+
+.input-field label {
+  color: #8d8d8d;
+  pointer-events: none;
+}
+
+.input-field select,
+.input-field input {
+  margin-top: 5px;
+  padding: 13px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: solid 1px #8d8d8d;
+  background-color: #242424;
+  letter-spacing: 1px;
+  width: 100%;
+}
