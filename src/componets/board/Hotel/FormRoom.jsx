@@ -34,7 +34,7 @@ export const FormRoom = ({ register }) => {
         </div>
 
         <input
-          type="text"
+          type="hidden"
           id="hotel_id"
           { ...register("hotel_id") }
           required
